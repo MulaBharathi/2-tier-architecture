@@ -18,7 +18,7 @@ module "database" {
   db_username      = var.db_username
   db_password      = var.db_password
   vpc_id           = module.networking.vpc_id
-  private_subnet_id =   [ 
+  private_subnet_ids =   [ 
     module.networking.private_subnet_1_id,
     module.networking.private_subnet_2_id
   ]
