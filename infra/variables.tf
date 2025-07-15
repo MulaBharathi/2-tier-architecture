@@ -1,27 +1,29 @@
-variable "aws_region" {
-	description = "AWS region to deploy resources"
-	default = "ap-south-1"
-}
-variable "key_name" {
-	description = "EC2 key pair name for SSH"
-}
-variable "public_key_path" {
-	description = "path to the public key file"
-}
-variable "instance_type" {
-	description = "EC2 instance type"
+variable "region" {
   type = string
-	default = "t2.micro"
 }
+
+variable "key_name" {
+  type = string
+}
+
+variable "public_key_path" {
+  type = string
+}
+
+variable "instance_type" {
+  type = string
+}
+
+variable "db_name" {
+  type = string
+}
+
 variable "db_username" {
-	description = "RDS DB master username"
-	default= "admin"
+  type = string
 }
+
 variable "db_password" {
-	description = "RDS DB master password"
-	sensitive = true
+  type = string
+  sensitive = true
 }
-variable "db_name"{
-	description = "rds database name"
-	default = "myappdb"
-}
+
