@@ -19,8 +19,8 @@ variable "vpc_id" {
   type        = string
 }
 
-variable "public_subnet_id" {
-  description = "Public subnet ID for RDS"
+variable "private_subnet_id" {
+  description = "Private subnet ID for RDS"
   type        = string
 }
 

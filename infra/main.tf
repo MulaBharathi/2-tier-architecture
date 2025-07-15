@@ -18,6 +18,6 @@ module "database" {
   db_username      = var.db_username
   db_password      = var.db_password
   vpc_id           = module.networking.vpc_id
-  public_subnet_id = module.networking.public_subnet_id
+  private_subnet_id = module.networking.private_subnet_id
 }
 
