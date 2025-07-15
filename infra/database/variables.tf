@@ -19,7 +19,7 @@ variable "vpc_id" {
   type        = string
 }
 
-variable "private_subnet_id" {
+variable "private_subnet_ids" {
   description = "list of Private subnet IDs to use for the RDS subnet group"
   type        = list(string)
 }
