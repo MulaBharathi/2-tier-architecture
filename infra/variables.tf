@@ -26,7 +26,4 @@ variable "db_password" {
   type = string
   sensitive = true
 }
-variable "region" {
-  description = "AWS region to deploy resources"
-  type        = string
-}
+
