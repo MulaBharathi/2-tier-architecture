@@ -1,5 +1,8 @@
 variable "region" {
+  description = "AWS region"
   type = string
+  deafult = "ap-south-1" 
+
 }
 
 variable "key_name" {
